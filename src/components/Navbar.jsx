@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
   const handleNav = () => {
     setNav(!nav);
   };
@@ -26,7 +26,9 @@ const Navbar = () => {
             : "fixed left-[-100%]"
         }
       >
-        <h1 className=" w-full text-3xl font-bold text-[#00df9a] mx-4 mt-8">React</h1>
+        <h1 className=" w-full text-3xl font-bold text-[#00df9a] mx-4 mt-8">
+          React
+        </h1>
 
         <ul className="pt-12 uppercase">
           <li className="p-4 border-b-gray-600 border-b-1">Home</li>
